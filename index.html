@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bimosol | $SOLBIM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/bimo-avatar.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Bimosol home">
+      <img class="brand-avatar" src="assets/bimo-avatar.png" alt="">
+      <span>Bimosol</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="https://pump.fun/" target="_blank" rel="noreferrer">Buy Now</a>
+      <a href="#about">About</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
+      <a href="https://t.me/" target="_blank" rel="noreferrer">TG</a>
+      <a href="https://pump.fun/" target="_blank" rel="noreferrer">Pump.fun</a>
+      <a href="https://dexscreener.com/solana" target="_blank" rel="noreferrer">Dexscreener</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero hero-banner">
+      <img class="hero-art" src="assets/bimosol-banner.png" alt="Bimosol arcade banner with Bimo, Flappy game, and Solana coin">
+      <div class="hero-copy">
+        <p class="eyebrow">Playable Solana meme coin</p>
+        <h1>Bimosol</h1>
+        <p class="hero-text">A tiny arcade console on Solana. Play inside Bimo's real screen, keep the original buttons visible, and help $SOLBIM fly.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="https://pump.fun/" target="_blank" rel="noreferrer">Buy $SOLBIM</a>
+          <a class="secondary-link" href="#about">Explore</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="arcade" aria-label="Playable Bimosol arcade">
+      <div class="section-copy">
+        <p class="eyebrow">Play</p>
+        <h2>Flap inside Bimo.</h2>
+        <p>Tap the screen, dodge the pipes, collect Solana coins, and stack extra points for $SOLBIM.</p>
+      </div>
+      <div class="bimo-stage" aria-label="Playable Bimosol console">
+        <img class="bimo-photo" src="assets/bim1.jpg" alt="Bimo console with a playable game on the screen">
+        <div class="game-screen">
+          <canvas id="gameCanvas" width="600" height="448" aria-label="Bimosol flappy mini game"></canvas>
+          <div class="screen-overlay" id="screenOverlay">
+            <strong>PRESS START</strong>
+            <span>tap the screen or press Space</span>
+          </div>
+        </div>
+        <span class="hotspot hot-dpad" aria-hidden="true"></span>
+        <span class="hotspot hot-blue" aria-hidden="true"></span>
+        <span class="hotspot hot-triangle" aria-hidden="true"></span>
+        <span class="hotspot hot-green" aria-hidden="true"></span>
+        <span class="hotspot hot-pink" aria-hidden="true"></span>
+        <span class="hotspot hot-left-pill" aria-hidden="true"></span>
+        <span class="hotspot hot-right-pill" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="ticker-strip" aria-label="Bimosol facts">
+      <div>
+        <span>$SOLBIM</span>
+        <span>0% taxes</span>
+        <span>Solana chain</span>
+        <span>All ears supply</span>
+        <span>Playable meme coin</span>
+        <span>$SOLBIM</span>
+        <span>0% taxes</span>
+        <span>Solana chain</span>
+        <span>All ears supply</span>
+        <span>Playable meme coin</span>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-copy">
+        <p class="eyebrow">About</p>
+        <h2>Built like a soft little arcade cult.</h2>
+        <p>Bimosol takes the cozy Bimo universe and gives it a crypto button mash. The mood is mint, moonlit, and unserious in the best way: a meme coin for people who want a character, a game, and a chart to stare at.</p>
+      </div>
+      <div class="about-panel">
+        <span>$SOLBIM</span>
+        <strong>Inside Bimo, every tap is a tiny moon mission.</strong>
+        <p>Original console art stays in the spotlight. The real buttons are visual again, while the playable screen keeps the arcade energy alive.</p>
+      </div>
+    </section>
+
+    <section class="media-band">
+      <div class="video-frame">
+        <video src="assets/bimo-video.mp4" autoplay muted loop playsinline></video>
+      </div>
+      <div class="section-copy">
+        <p class="eyebrow">Vibes</p>
+        <h2>Mint skies, moon runs, button clicks.</h2>
+        <p>The site keeps the original art as the center of the experience. No fake console redraw: the game lives inside your Bimo image, and the page extends that same dreamy palette.</p>
+      </div>
+    </section>
+
+    <section class="tokenomics" id="tokenomics">
+      <div class="section-copy">
+        <p class="eyebrow">Tokenomics</p>
+        <h2>Simple, clean, ready to fly.</h2>
+      </div>
+      <div class="stats">
+        <article>
+          <span>Supply</span>
+          <strong>All ears</strong>
+        </article>
+        <article>
+          <span>Ticker</span>
+          <strong>$SOLBIM</strong>
+        </article>
+        <article>
+          <span>Taxes</span>
+          <strong>0%</strong>
+        </article>
+        <article>
+          <span>Chain</span>
+          <strong>Solana</strong>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Bimosol</span>
+    <span>$SOLBIM is a community meme project. Tap carefully, chart responsibly.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
