@@ -271,15 +271,22 @@ canvas {
   background: var(--yellow);
 }
 
-.ticker-strip div {
-  width: max-content;
+.ticker-track {
+  width: fit-content;
   display: flex;
+  animation: ticker 24s linear infinite;
+  will-change: transform;
+}
+
+.ticker-group {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
   gap: 2rem;
   padding: .9rem 1rem;
   font-family: "Fredoka", sans-serif;
   font-size: clamp(1.2rem, 3vw, 2.1rem);
   font-weight: 700;
-  animation: ticker 20s linear infinite;
 }
 
 .arcade {
@@ -386,8 +393,12 @@ canvas {
 }
 
 @keyframes ticker {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
